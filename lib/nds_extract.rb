@@ -70,10 +70,9 @@ def gross_per_studio(collection)
    new_hash[movie_with_director_name(studio_row,movie_row) ]
    
    
-   total_gross += new_hash[i][:worldwide_gross]
    i += 1 
   end 
-  total_gross 
+  new_hash
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
   # return a Hash that includes the total worldwide_gross of all the movies from
   # each studio.
