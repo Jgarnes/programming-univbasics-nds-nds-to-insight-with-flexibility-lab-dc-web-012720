@@ -63,7 +63,7 @@ def gross_per_studio(collection)
   new_hash = {}
   total_gross = 0 
   i = 0 
-  
+  binding.pry 
  while i < collection.length do 
    
    
