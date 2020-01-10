@@ -69,7 +69,7 @@ def gross_per_studio(collection)
   if !new_hash[studio_name]
       new_hash[studio_name] = 1
 else
-  new_hash[studio_name] += 1
+  new_hash[studio_gross] += 1
     end
     i += 1 
   end 
