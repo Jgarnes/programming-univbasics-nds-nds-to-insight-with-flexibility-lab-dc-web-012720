@@ -67,7 +67,7 @@ def gross_per_studio(collection)
  while i < collection.length do 
    studio_row = collection[i][:studio]
    movie_row = collection[i][:worldwide_gross]
-   new_hash[movie_with_director_name]
+   new_hash[movie_with_director_name(studio_row,movie_row) ]
    
    
    total_gross += new_hash[i][:worldwide_gross]
