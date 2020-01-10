@@ -63,7 +63,7 @@ def gross_per_studio(collection)
   new_hash = {}
   total_gross = 0 
   i = 0 
-  #binding.pry
+  
  while i < collection.length do 
    total_gross += new_hash[i][:worldwide_gross]
    i += 1 
@@ -87,7 +87,6 @@ def movies_with_directors_set(source)
   i = 0 
   while i < source.length do 
   directors_movies << movies_with_director_key(source[i][:name], source[i][:movies])
-  #binding.pry
   i += 1 
 end 
   directors_movies
