@@ -60,17 +60,16 @@ def movies_with_director_key(name, movies_collection)
 end
 
 def gross_per_studio(collection)
-  result = {}
+  new_hash = {}
   i = 0 
- 
+  
   while i < collection.length do 
     studio_name = collection[i][:studio]
     studio_gross = collection[i][:worldwide_gross]
-  if !new_hash[studio_name]
-      new_hash[studio_name] = 1
-      binding.pry 
+  if !new_hash[studio_gross]
+      new_hash[studio_gross] = current_worldwide_gross
 else
-  new_hash[studio_name] += 1
+  new_hash[studio_gross] += current_worldwide_gross
     end
     i += 1 
   end 
