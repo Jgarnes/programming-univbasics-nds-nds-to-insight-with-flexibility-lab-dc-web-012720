@@ -65,6 +65,7 @@ def gross_per_studio(collection)
   
   while i < collection.length do 
     studio_name = collection[i][:studio]
+    studio_gross = collection[i][:worldwide_gross]
   if !new_hash[studio_name]
       new_hash[studio_name] = current_worldwide_gross
 else
