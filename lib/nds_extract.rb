@@ -63,7 +63,7 @@ def gross_per_studio(collection)
   new_hash = {}
  
   i = 0 
-  binding.pry 
+
  while i < collection.length do 
    studio_row = collection[i][:studio]
    movie_row = collection[i][:worldwide_gross]
